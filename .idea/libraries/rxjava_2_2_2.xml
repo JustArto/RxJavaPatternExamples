@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="rxjava-2.2.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../CodTesting/lib/rxjava-2.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../CodTesting/lib/reactive-streams-1.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
