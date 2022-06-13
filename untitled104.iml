@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="rxjava-2.2.2" level="project" />
+    <orderEntry type="library" name="de.mirkosertic.bytecoder.java.base" level="project" />
   </component>
 </module>
