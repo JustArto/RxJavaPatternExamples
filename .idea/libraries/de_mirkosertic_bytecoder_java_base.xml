@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="de.mirkosertic.bytecoder.java.base" type="repository">
+    <properties maven-id="de.mirkosertic.bytecoder:java.base:2021-11-02" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/de/mirkosertic/bytecoder/java.base/2021-11-02/java.base-2021-11-02.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/de/mirkosertic/bytecoder/bytecoder.api/2021-11-02/bytecoder.api-2021-11-02.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
