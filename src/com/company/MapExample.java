@@ -9,6 +9,14 @@ public class MapExample {
                 .map(s -> s + " + new data")
                 .subscribe(s -> System.out.println(s));
 
+        Observable.just("Some data...")
+                .doOnNext(System.out::println)
+                .doOnNext(value -> System.out.println("before transform: " + value+" You can add something here but it dont affect in data"))
+                .map(value -> value + "| adding some new data")
+                .doOnNext(value -> System.out.println("after transform: " + value))
+                .subscribe(onNext -> {
+            System.out.println("onNext: "+onNext); // print out the remaining numbers
+        });
         //Result: Some data! + new data
     }
 
