@@ -25,14 +25,17 @@ public class ConcatMapExample {
                 })
                 //.toList().
                 .doOnNext(System.out::println)
+                .doOnNext(value -> System.out.println("before transform: " + value))
+                .map(value -> value + "| adding some new data")
+                .doOnNext(value -> System.out.println("after transform: " + value))
                 .subscribe();
 
         scheduler.advanceTimeBy(1, TimeUnit.MINUTES);
     }
+//doOnNext()позволяет нам добавить некоторое дополнительное действие, происходящее всякий раз, как мы получаем новый элемент данных.
 
 //Технически данный оператор выдает похожий с FlatMap() результат, меняется только последовательность эмиттируемых данных.
 // ConcatMap() поддерживает порядок эмиссии данных и ожидает исполнения текущего Observable. Поэтому лучше использовать
 // его когда необходимо обеспечить порядок выполнения задач. При этом нужно помнить, что выполнение ConcatMap()
 // занимает больше времени чем FlatMap().
-
 }
